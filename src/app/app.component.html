@@ -1,5 +1,3 @@
 <div class="container">
-  <div class="counter">
-    <h1>{{ (secondsLeft$ | async) }}</h1>
-  </div>
+  <app-countdown [secondsLeft]="secondsLeft$ | async"></app-countdown>
 </div>

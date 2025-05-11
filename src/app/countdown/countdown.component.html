@@ -1,1 +1,7 @@
-<p>countdown works!</p>
+<div class="counter">
+  @if (secondsLeft()) {
+  <h1>Seconds left to deadline: {{ secondsLeft() }}</h1>
+  } @else {
+  <h1>Fetching seconds left ...</h1>
+  }
+</div>

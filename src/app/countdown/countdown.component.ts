@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-countdown',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './countdown.component.scss'
 })
 export class CountdownComponent {
-
+  secondsLeft = input<number | null>(0)
 }
